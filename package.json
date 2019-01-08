@@ -1,0 +1,25 @@
+{
+  "name": "static_node_and_express_site-project-6",
+  "version": "1.0.0",
+  "description": "I created a portfolio showcasing my other projects using Node.js, Express and Pug, setting up a server, handling requests, working with server-side JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpaceXar20/static_node_and_express_site-project-6.git"
+  },
+  "author": "Erik L",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpaceXar20/static_node_and_express_site-project-6/issues"
+  },
+  "homepage": "https://github.com/SpaceXar20/static_node_and_express_site-project-6#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  }
+}

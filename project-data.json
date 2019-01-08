@@ -1,0 +1,52 @@
+{
+    "data": {
+       
+        "projects": [
+            {
+                "id": "0",
+                "project_name": "A random quote generator",
+                "description": "This is a project that display a random quote each time the button is clicked or every 5 seconds",
+                "technologies": ["HTML", "CSS", "JAVASCRIPT"],
+                "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-1/",
+                "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-1",
+                "image_urls": ["images/project-0-main-pic.png", "images/project-0-landscape-pic.png"]
+            },
+            {
+                "id": "1",
+                "project_name": "List Pagination and Filtering",
+                "description": "This is website that shows 10 students per page",
+                "technologies": ["HTML", "CSS", "JAVASCRIPT"],
+                "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-2/",
+                "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-2",
+                "image_urls": ["images/project-1-main-pic.png", "images/project-1-landscape-pic.png"]
+            },
+            {
+                "id": "2",
+                "project_name": "Interactive Form",
+                "description": "This website is an interactive form that takes user input and validates them",
+                "technologies": ["HTML", "CSS", "JAVASCRIPT, JQUERY"],
+                "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-3/",
+                "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-3",
+                "image_urls": ["images/project-2-main-pic.png", "images/project-2-landscape-pic.png"]
+            },
+            {
+                "id": "3",
+                "project_name": "OOP Game Show App",
+                "description": "Use your keyboard. This is a phrase guessing game.I used Object Oriented Programming concepts for this project",
+                "technologies": ["HTML", "CSS", "JAVASCRIPT, JQUERY"],
+                "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-4-b/",
+                "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-4-b",
+                "image_urls": ["images/project-3-main-pic.png", "images/project-3-landscape-pic.png"]
+            },
+            {
+                "id": "4",
+                "project_name": "Public API Requests",
+                "description": "This project requests data to an API in order to display information of employees for a fictional company",
+                "technologies": ["https://randomuser.me/", "HTML", "CSS", "JAVASCRIPT, JQUERY"],
+                "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-5/",
+                "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-5",
+                "image_urls": ["images/project-4-main-pic.png", "images/project-4-landscape-pic.png"]
+            }
+        ]
+    }
+}
