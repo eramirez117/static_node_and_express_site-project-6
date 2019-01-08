@@ -29,10 +29,17 @@ app.use('/static', express.static('public'));
 to parameter pug*/
 app.set('view engine', 'pug');
 
+//import routes from index.js
+const appRoutes = require('./routes/index.js');
+
+//use routes variable in a middleware function to pass in the routes
+app.use(appRoutes); 
+console.log('app.js has received the routes');
+
 
 /*setup the development server using the listen method
 and give parameter of 3000 which is the port number*/
 
 app.listen(3000, () => { //the listen method can take a callback function as a parameter
-    console.log('The application is running on localhost:3000!');
+    console.log('App.listen works, The application is running on localhost:3000!');
 });

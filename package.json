@@ -2,7 +2,7 @@
   "name": "static_node_and_express_site-project-6",
   "version": "1.0.0",
   "description": "I created a portfolio showcasing my other projects using Node.js, Express and Pug, setting up a server, handling requests, working with server-side JavaScript",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
