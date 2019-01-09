@@ -36,6 +36,39 @@ const appRoutes = require('./routes/index.js');
 app.use(appRoutes); 
 console.log('app.js has received the routes');
 
+//I watched joel's middleware video as a reference for the error handler
+// catch 404 and forward to error handler
+app.use((req, res, next) => {
+    const err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+  });
+  
+  // error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+    app.use((err, req, res, next) => {
+      res.status(err.status || 500);
+      res.render('error', {
+        message: err.message,
+        error: err
+      });
+    });
+  }
+  
+  // production error handler
+  // no stack traces leaked to user
+  app.use((err, req, res, next) => {
+    res.status(err.status || 500);
+    res.render('error', {
+      message: err.message,
+      error: {}
+    });
+  });
+  
+
 
 /*setup the development server using the listen method
 and give parameter of 3000 which is the port number*/

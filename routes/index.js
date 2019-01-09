@@ -11,7 +11,6 @@ const router = express.Router();
 //An "index" route (/) to render the "Home" page with the locals set to data.projects
 //I used a code snippet from Carlos https://stackoverflow.com/a/33655662/10043628
 router.get('/', (req, res) => {
-    console.log('This router went through!');
     res.render('index');
     req.app.locals = data.projects;
 });
@@ -27,9 +26,19 @@ Dynamic "project" routes (/project or /projects) based on the id of the project
  that render a customized version of the Pug project template to show off each project.
  Which means adding data, or "locals", as an object that contains data to be passed to the Pug template.
 */
-router.get('/projects:id', (req, res) => {
+router.get('/project:id', (req, res) => {
     res.render('project');
-    req.app.locals = data.projects.id;
+    req.app.locals = data.projects
+    const { id } = req.params.id //this variable represents the id of the project
+    
+    //render project html content based on ID
+    for (var project in data.projects){ //I used a code snippet from Mauricio  https://stackoverflow.com/a/54101518/10043628
+        if(project.id === id){
+          res.status(200).json(project);
+        } else {
+          res.status(500).json({message: " There is no project with this id"});
+        }
+      }
 });
 
 //export the router to reference it in the app.js file 
