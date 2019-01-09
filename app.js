@@ -23,7 +23,8 @@ const cookieParser = require('cookie-parser');
  app.use(cookieParser());
 
  //add express.static to serve static assets
-app.use('/static', express.static('public'));
+  app.use('/static', express.static('public'));
+  app.use('/static', express.static('images'));
 
 /*we tell express to use pug by using the set() method to set view engine
 to parameter pug*/
@@ -41,7 +42,7 @@ console.log('app.js has received the routes');
 app.use((req, res, next) => {
     const err = new Error('Not Found');
     err.status = 404;
-    next(err);
+   next(err);
   });
   
   // error handlers

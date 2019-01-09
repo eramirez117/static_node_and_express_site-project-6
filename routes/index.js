@@ -1,3 +1,5 @@
+ //This file will be where I will create my routes
+ 
  //use require method to require the express module
  const express = require('express');
 
@@ -29,7 +31,7 @@ Dynamic "project" routes (/project or /projects) based on the id of the project
 router.get('/project:id', (req, res) => {
     res.render('project');
     req.app.locals = data.projects
-    const { id } = req.params.id //this variable represents the id of the project
+    const { id } = req.params; //this variable represents the id of the project
     
     //render project html content based on ID
     for (var project in data.projects){ //I used a code snippet from Mauricio  https://stackoverflow.com/a/54101518/10043628
