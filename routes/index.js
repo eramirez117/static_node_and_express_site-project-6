@@ -37,6 +37,8 @@ router.get('/project:id', (req, res) => {
     for (var project in data.projects){ //I used a code snippet from Mauricio  https://stackoverflow.com/a/54101518/10043628
         if(project.id === id){
           res.status(200).json(project);
+          //render project name
+          res.render({Name: data.projects.project_name});
         } else {
           res.status(500).json({message: " There is no project with this id"});
         }
