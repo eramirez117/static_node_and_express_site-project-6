@@ -1,5 +1,5 @@
 {
-    "data": {
+    
        
         "projects": [
             {
@@ -48,5 +48,5 @@
                 "image_urls": ["images/project-4-main-pic.png", "images/project-4-landscape-pic.png"]
             }
         ]
-    }
+    
 }
