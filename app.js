@@ -24,8 +24,8 @@ const cookieParser = require('cookie-parser');
 
  //add express.static to serve static assets
   app.use('/static', express.static('public'));
-  app.use('/static', express.static('images'));
-
+  
+  
 /*we tell express to use pug by using the set() method to set view engine
 to parameter pug*/
 app.set('view engine', 'pug');

@@ -1,3 +1,4 @@
+//- This pug is done
 extends layout.pug
 
 block content 
@@ -14,33 +15,28 @@ block content
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
 
-      //- Use the Pug `each` iterator to create a project img, title and link in the markup for each of the projects you are showcasing.  
       
-      //- Use a combination of interpolation and template literals as needed to dynamically generate the routes in the href, as well as the img's src and the projects title.
-      
-      //- Here's what the Pug for each project example should look like. 
-
       .cell
         a(href='/project:0')
-          img.thumbnail(src='https://placehold.it/550x550')
+          img.thumbnail(src='static/images/project-0-main-pic.png')
           h5 A random quote generator
 
       .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title
+        a(href='/project:1')
+          img.thumbnail(src='static/images/project-1-main-pic.png')
+          h5 List Pagination and Filtering
 
       .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title
+        a(href='/project:2')
+          img.thumbnail(src='static/images/project-2-main-pic.png')
+          h5 Interactive Form
 
       .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title
+        a(href='/project:3')
+          img.thumbnail(src='static/images/project-3-main-pic.png')
+          h5 OOP Game Show App
 
       .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title    
+        a(href='/project:4')
+          img.thumbnail(src='static/images/project-4-main-pic.png')
+          h5 Public API Requests    
