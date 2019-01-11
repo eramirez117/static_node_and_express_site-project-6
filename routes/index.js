@@ -4,7 +4,7 @@
  const express = require('express');
 
  //require Json file data
- const data = require('../data/project-data.json').data;
+ const data = require('../data/project-data.json')
 
  console.log('Json data on index.js line 5 went through!');
 //Set Routes, use router constructor to create a a router instance
@@ -29,6 +29,8 @@ Dynamic "project" routes (/project or /projects) based on the id of the project
  Which means adding data, or "locals", as an object that contains data to be passed to the Pug template.
 */
 router.get('/project:id', (req, res) => {
+    //console.log(data);
+   
     const {projectData} = data; //const reference for json file data, pass in the projects property from the data.json
 
    const { id } = req.params; //this variable represents the id of the project
