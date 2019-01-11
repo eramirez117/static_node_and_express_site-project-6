@@ -23,9 +23,34 @@ block content
       //-iterate through each index of data.projects and update properties using interpolation.
       //-I received help on this section from myles young
     
-      each val, index in {projects}
-        a(href=`/project/${val.id}`)
-          img.thumbnail(src=`${val.image_urls[0]}`)
-          h5 #{val.project_name}
+      //- each val, index in {projects}
+      //-   a(href=`/project/${val.id}`)
+      //-     img.thumbnail(src=`${val.image_urls[0]}`)
+      //-     h5 #{val.project_name}
 
+      //- this displays the info for projects without using each
+
+      .cell
+        a(href='/project:0')
+          img.thumbnail(src='static/images/project-0-main-pic.png')
+          h5 "A random quote generator
       
+      .cell
+        a(href='/project:1')
+          img.thumbnail(src='static/images/project-1-main-pic.png')
+          h5 List Pagination and Filtering
+
+      .cell
+        a(href='/project:2')
+          img.thumbnail(src='static/images/project-2-main-pic.png')
+          h5 Interactive Form
+
+      .cell
+        a(href='/project:3')
+          img.thumbnail(src='static/images/project-3-main-pic.png')
+          h5 OOP Game Show App
+
+      .cell
+        a(href='/project:4')
+          img.thumbnail(src='static/images/project-4-main-pic.png')
+          h5 Public API Requests    
