@@ -29,13 +29,11 @@ Dynamic "project" routes (/project or /projects) based on the id of the project
  Which means adding data, or "locals", as an object that contains data to be passed to the Pug template.
 */
 router.get('/project:id', (req, res) => {
-   //const { id } = req.params; //this variable represents the id of the project
+    const {projectData} = data; //const reference for json file data, pass in the projects property from the data.json
 
-    //pass the projects property from the data.json, the es2015 syntax can also be written as 
-    const {projects} = data
+   const { id } = req.params; //this variable represents the id of the project
 
-    //pass in the data into the locals object and access it using interpolation in index.pug
-    res.render('index', {projects})
+   res.render('project', {id, projectData})
 });
 
 //export the router to reference it in the app.js file 

@@ -9,14 +9,14 @@ block content
 
         //- Use interpolation to dynamically add the project title.
         
-        h1 Title
+        h1 #{projects[id].project_name}
         
         //- Use interpolation to dynamically add the project description.
         p.lead.text-light
-          | Description
+          | #{projects[id].description}
 
       .cell.portfolio-meta.small-6.medium-2.large-3
-        h6 Technologies
+        h6 #{projects[id].technologies}
 
         //- Use an `each` iterator to replace the li tags below and interpolation to dynamically add the technologies used in each project.
         ul
