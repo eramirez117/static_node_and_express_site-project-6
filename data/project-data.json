@@ -9,7 +9,7 @@
                 "technologies": ["HTML", "CSS", "JAVASCRIPT"],
                 "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-1/",
                 "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-1",
-                "image_urls": ["images/project-0-main-pic.png", "images/project-0-landscape-pic.png"]
+                "image_urls": ["images/project-0-main-pic.png", "../static/images/project-0-landscape-pic.png", "../static/images/project-0-landscape-pic-1.png", "../static/images/project-0-landscape-pic-3.png"]
             },
             {
                 "id": "1",
@@ -18,16 +18,16 @@
                 "technologies": ["HTML", "CSS", "JAVASCRIPT"],
                 "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-2/",
                 "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-2",
-                "image_urls": ["images/project-1-main-pic.png", "images/project-1-landscape-pic.png"]
+                "image_urls": ["images/project-1-main-pic.png", "../static/images/project-1-landscape-pic.png", "../static/images/project-1-landscape-pic-2.png", "../static/images/project-1-landscape-pic-3.png"]
             },
             {
                 "id": "2",
                 "project_name": "Interactive Form",
                 "description": "This website is an interactive form that takes user input and validates them",
-                "technologies": ["HTML", "CSS", "JAVASCRIPT, JQUERY"],
+                "technologies": ["HTML", "CSS", "JAVASCRIPT", "JQUERY"],
                 "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-3/",
                 "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-3",
-                "image_urls": ["images/project-2-main-pic.png", "images/project-2-landscape-pic.png"]
+                "image_urls": ["images/project-2-main-pic.png", "../static/images/project-2-landscape-pic.png", "../static/images/project-2-landscape-pic-2.png", "../static/images/project-2-landscape-pic-3.png"]
             },
             {
                 "id": "3",
@@ -36,7 +36,7 @@
                 "technologies": ["HTML", "CSS", "JAVASCRIPT, JQUERY"],
                 "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-4-b/",
                 "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-4-b",
-                "image_urls": ["images/project-3-main-pic.png", "images/project-3-landscape-pic.png"]
+                "image_urls": ["images/project-3-main-pic.png", "../static/images/project-3-landscape-pic.png", "../static/images/project-3-landscape-pic-2.png", "../static/images/project-3-landscape-pic-3.png"]
             },
             {
                 "id": "4",
@@ -45,7 +45,7 @@
                 "technologies": ["https://randomuser.me/", "HTML", "CSS", "JAVASCRIPT, JQUERY"],
                 "live_link": "https://spacexar20.github.io/FSJS-techdegree-project-5/",
                 "github_link": "https://github.com/SpaceXar20/FSJS-techdegree-project-5",
-                "image_urls": ["images/project-4-main-pic.png", "images/project-4-landscape-pic.png"]
+                "image_urls": ["images/project-4-main-pic.png", "../static/images/project-4-landscape-pic.png", "../static/images/project-4-landscape-pic-2.png", "../static/images/project-4-landscape-pic-3.png"]
             }
         ]
     
