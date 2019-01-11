@@ -4,7 +4,8 @@
   "description": "I created a portfolio showcasing my other projects using Node.js, Express and Pug, setting up a server, handling requests, working with server-side JavaScript",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
