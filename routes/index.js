@@ -31,11 +31,11 @@ Dynamic "project" routes (/project or /projects) based on the id of the project
 router.get('/project/:id', (req, res) => {
     //console.log(data);
    
-    const {projects} = data; //const reference for json file data, pass in the projects property from the data.json
+    const {projects} = data; //const reference for json file data, pass in the projects property from the data.json which will pass the json data to project.pug
 
-   const { id } = req.params; //this variable represents the id of the project
+   const { id } = req.params; //this variable represents the id of the project, it will be passed to project.pug
    
-   res.render('project', {id, projects})
+   res.render('project', {id, projects}) //render project.pug, along with the json file data stored in projects and id
 });
 
 //export the router to reference it in the app.js file 
